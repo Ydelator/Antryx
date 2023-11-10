@@ -1,0 +1,421 @@
+:root{
+  --primary: #D2AB67;
+  --secondary: #7497B2;
+  --text: #1B4645;
+  --background: #75857F;
+  --arimo: font-family: 'Arimo', sans-serif;
+}
+.mapa{
+    border:0;
+}
+body {
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  font-family: 'Aleo', serif;
+  /*background-image: url('https://cdn.pixabay.com/photo/2016/05/27/17/17/nut-1420234_960_720.png');*/
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+/*Navbar*/
+.container-navbar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 5px;
+}
+.container-navbar img{
+  width: 50%;
+}
+.container-nav{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  text-align: center;
+  align-items: center;
+}
+.links{
+  text-decoration: none;
+  color: var(--text);
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  transition: 0.3s;
+}
+.links:hover{
+  background-color: var(--primary);
+}
+
+/*Inicio*/
+.inicio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.cabecera{
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url('./assets/grupo.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 980px) {
+  .cabecera{
+    background-position: center;
+  }
+}
+.cabecera img{
+  width: 400px;
+}
+.banner h5{
+  font-weight: 1000;
+  font-size: xx-large;
+}
+.info-evento{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+  padding: 10px;
+  border: solid var(--text);
+  border-radius: 15px;
+}
+.info-evento-1{
+  width: 40%;
+}
+.info-evento img{
+  width: 400px;
+}
+
+/*Contador*/
+.contador{
+  width: 100%;
+  color: var(--primary);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  border: solid;
+  padding: 15px;
+  font-family: 'Teko', sans-serif;
+}
+.contadores{
+  width: 150px;
+}
+.valores{
+  font-size: 70px;
+  text-shadow: 2px 2px 5px var(--background);
+}
+.tiempos{
+  font-size: 30px;
+  text-shadow: 2px 2px 5px var(--background);
+}
+@media (max-width: 980px) {
+  .valores{
+    font-size: 50px;
+  }
+  .tiempos{
+    font-size: 20px;
+  }
+}
+/*Carrusel*/
+.carrusel{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  padding-bottom: 20px;
+}
+.tarjeta{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.indicador{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 30%;
+  margin-left: 20%;
+}
+.icono{
+  width: 50px;
+  height: 50px;
+}
+ion-icon{
+  width: 50px;
+  height: 50px;
+}
+.next{
+  cursor: pointer;
+}
+.prev{
+  cursor: pointer;
+}
+.swiper {
+  width: 300px;
+  height: 400px;
+  margin-bottom: 30px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  background-color: antiquewhite;
+}
+.paginacion{
+  display: flex;
+}
+
+/*Prefooter*/
+.pre-footer{
+  display: flex;
+  width: 75%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px;
+  border: solid var(--text);
+  background-color: var(--primary);
+  border-radius: 15px;
+  margin-bottom: 10px;
+  gap: 15px;
+}
+.inscripcion{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35%px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+.inscripcion-form{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px;
+}
+.inscripcion-form span{
+  color: red;
+}
+.btn-inscribirme{
+  margin-top: 10px;
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+  width: 300px;
+  border: 3px solid var(--primary);
+  z-index: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-inscribirme::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  left: 0;
+  top: -200%;
+  border-radius: 50%;
+  background-color: var(--primary);
+  z-index: 1;
+  transition: all 0.6s ease;
+}
+.btn-inscribirme:hover:before{
+  top: 0;
+  border-radius: 0%;
+}
+.btn-inscribirme span{
+  color: var(--text);
+  position: relative;
+  z-index: 2;
+}
+
+/*Acerca de Nosotros*/
+.acerca-nosotros{
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.acerca-nosotros h2{
+  font-weight: 1000;
+  font-size: xx-large;
+}
+.acerca-primero{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 70%;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-around;
+}
+.acerca-primero p{
+  width: 350px;
+}
+.acerca-primero img{
+  width: 400px;
+}
+.acerca1{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--primary);
+  border: solid var(--text);
+  border-radius: 15px;
+  padding: 15px;
+}
+.acerca1 img{
+  width: 500px;
+}
+.mision{
+  width: 350px;
+  text-align: left;
+}
+.vision{
+  width: 350px;
+  text-align: right;
+}
+.objetivo{
+  width: 70%;
+  text-align: center;
+}
+.valores-marca{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--secondary);
+  border: solid var(--text);
+  border-radius: 15px;
+}
+.valores-marca h2{
+  color: #e2dbdb;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 50px;
+}
+.cards p{
+  width: 375px;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: var(--primary);
+  border: solid var(--text);
+}
+
+/*Contactanos*/
+.contactanos{
+  color: var(--text);
+  font-family: var(--arimo);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.formulario{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 60%;
+  align-items: center;
+  border: solid var(--text);
+  border-radius: 15px;
+  padding: 2%;
+}
+.formulario1, .formulario2{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.formulario1 span{
+  color: red;
+}
+.formulario2 span{
+  color: red;
+}
+.label-mensaje{
+  margin-top: 10px;
+}
+.label-mensaje span{
+  color: red;
+}
+.elemento-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.contactanos textarea{
+  width: 60%;
+  resize: none;
+  border-radius: 15px;
+}
+.btn-enviar{
+  margin-top: 10px;
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+  width: 300px;
+  border: 3px solid var(--primary);
+  z-index: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-enviar::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  left: 0;
+  top: -200%;
+  border-radius: 50%;
+  background-color: var(--primary);
+  z-index: 1;
+  transition: all 0.6s ease;
+}
+.btn-enviar:hover:before{
+  top: 0;
+  border-radius: 0%;
+}
+.btn-enviar span{
+  color: var(--text);
+  position: relative;
+  z-index: 2;
+}
