@@ -10,6 +10,8 @@ const Navbar = () => {
             <Link className='links' to={'/'}>Inicio</Link>
             <Link className='links' to={'/acercanosotros'}>Acerca de nosotros</Link>
             <Link className='links' to={'/contacto'}>Contactanos</Link>
+            <Link className='links' to={'/galeria'}>Galeria</Link>
+            <Link className='links' to={'/agradecimientos'}>Agradecimientos</Link>
         </div>
     </div>
   )

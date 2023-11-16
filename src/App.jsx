@@ -1,11 +1,12 @@
 import './App.css'
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Inicio from './pages/Inicio'
-import Acerca from './pages/Acerca'
-
-import Contacto from './pages/Contacto'
+import Navbar from './components/Navbar.jsx'
+import Inicio from './pages/Inicio.jsx'
+import Acerca from './pages/Acerca.jsx'
+import Contacto from './pages/Contacto.jsx'
+import Agradecimientos from './pages/Agradecimientos.jsx'
+import Galeria from './pages/Galeria.jsx'
 
 function App() {
 
@@ -16,8 +17,9 @@ function App() {
         <Routes>
           <Route path='/' element={<Inicio/>}/>
           <Route path='acercanosotros' element={<Acerca/>}/>
-
           <Route path='contacto' element={<Contacto/>}/>
+          <Route path='agradecimientos' element={<Agradecimientos/>}/>
+          <Route path='galeria' element={<Galeria/>}/>
         </Routes>
       </div>
     </Router>

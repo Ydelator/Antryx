@@ -19,26 +19,7 @@ const Formulario = () => {
 
   return (
     <div className='inscripcion'>
-        <h2>Formulario de inscripcion</h2>
-        <form className='inscripcion-form' ref={refForm} action="" onSubmit={handleSubmit}>
-
-            <label className='name'>Nombre <span>*</span></label>
-            <input name='name' type="text" placeholder='' required/>
-
-            <label className='lastname'>Apellido <span>*</span></label>
-            <input name='lastname' type="text" placeholder='' required/>
-
-            <label className='identificacion'>Identificacion <span>*</span></label>
-            <input name='identificacion' type="text" placeholder='' required/>
-
-
-            <label className='profesion'>Profesion</label>
-            <input name='profesion' type="text" placeholder='' required/>
- 
-          
-          <button className='btn-inscribirme'><span>Inscribirme</span></button>
-            
-        </form>
+        <img src="https://regioncaribe.com.co/wp-content/uploads/2019/07/Inauguran-dos-nuevas-sedes-del-SENA-para-formaci%C3%B3n-en-Econom%C3%ADa-Naranja-y-Turismo-en-Barranquilla-02.jpg" alt="image_nodo" />
     </div>
   )
 }

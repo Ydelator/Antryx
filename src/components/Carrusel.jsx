@@ -33,6 +33,14 @@ const Carrusel = () => {
         className='mySwiper'
 
         >
+           <SwiperSlide>
+              <div className="tarjeta">
+                <h2>Juan Jaramillo</h2>
+                <img className='expositor' src={Juan} alt="juan" />
+                <h4>Director de la CLENA</h4>
+                <p>"Hablemos sobre Barranquilla y la búsqueda de su vocación como clúster de eventos y negocios".</p>
+              </div>
+            </SwiperSlide>
             <SwiperSlide>
               <div className="tarjeta">
                 <h2>Andres Serje</h2>
@@ -43,18 +51,10 @@ const Carrusel = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="tarjeta">
-                <h2>Bisila Bokoko</h2>
-                <img className='expositor' src={Bisila} alt="bisila" />
-                <h4>Invitada Internacional</h4>
-                <p>Mujer de negocios, emprendedora y filántropa y CEO de BBES, una agencia de desarrollo empresarial de Nueva York que representa y promueve marcas de mercados internacionales.</p>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="tarjeta">
-                <h2>Carlos De La Hoz</h2>
-                <img className='expositor' src={Carlos} alt="carlos" />
-                <h4>Egresado SENA</h4>
-                <p>"Quiero contarte sobre mi experiencia profesional como egresado SENA, en el mercado laboral de los eventos".</p>
+                <h2>Kathy López</h2>
+                <img className='expositor' src={Kathy} alt="kathy" />
+                <h4>Jefa de la Oficina de Turismo Alcaldía de Barranquilla</h4>
+                <p>"Barranquilla, destino lider en turismo de eventos y negocios en Suramérica".</p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -67,20 +67,20 @@ const Carrusel = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="tarjeta">
-                <h2>Juan Jaramillo</h2>
-                <img className='expositor' src={Juan} alt="juan" />
-                <h4>Director de la CLENA</h4>
-                <p>"Hablemos sobre Barranquilla y la búsqueda de su vocación como clúster de eventos y negocios".</p>
+                <h2>Carlos De La Hoz</h2>
+                <img className='expositor' src={Carlos} alt="carlos" />
+                <h4>Egresado SENA</h4>
+                <p>"Quiero contarte sobre mi experiencia profesional como egresado SENA, en el mercado laboral de los eventos".</p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="tarjeta">
-                <h2>Kathy López</h2>
-                <img className='expositor' src={Kathy} alt="kathy" />
-                <h4>Jefa de la Oficina de Turismo Alcaldía de Barranquilla</h4>
-                <p>"Barranquilla, destino lider en turismo de eventos y negocios en Suramérica".</p>
+                <h2>Bisila Bokoko</h2>
+                <img className='expositor' src={Bisila} alt="bisila" />
+                <h4>Invitada Internacional</h4>
+                <p>Mujer de negocios, emprendedora y filántropa y CEO de BBES, una agencia de desarrollo empresarial de Nueva York que representa y promueve marcas de mercados internacionales.</p>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> 
         </Swiper>
         <div className="indicador">
           <div className="prev"><ion-icon name="arrow-back-circle-outline"></ion-icon></div>

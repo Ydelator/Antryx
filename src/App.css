@@ -32,6 +32,14 @@ body {
 .container-navbar img{
   width: 50%;
 }
+@media (max-width: 980px) {
+  .container-navbar{
+    font-size: smaller;
+  }
+  .container-navbar img{
+    width: 80px;
+  }
+}
 .container-nav{
   display: flex;
   flex-direction: row;
@@ -68,7 +76,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -77,9 +84,6 @@ body {
   .cabecera{
     background-position: center;
   }
-}
-.cabecera img{
-  width: 400px;
 }
 .banner h5{
   font-weight: 1000;
@@ -137,6 +141,10 @@ body {
   }
   .tiempos{
     font-size: 20px;
+  }
+  .contador{
+    width: 90%;
+    margin-left: 2%;
   }
 }
 /*Carrusel*/
@@ -202,6 +210,20 @@ ion-icon{
   box-shadow: 0px 5px 10px black;
 }
 
+/*Flyers*/
+.flyer-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.flyer-card{
+  width: 450px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 /*Prefooter*/
 .pre-footer{
   display: flex;
@@ -226,46 +248,9 @@ ion-icon{
   background-color: #ffffff;
   border-radius: 15px;
 }
-.inscripcion-form{
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  padding: 20px;
-}
-.inscripcion-form span{
-  color: red;
-}
-.btn-inscribirme{
-  margin-top: 10px;
-  overflow: hidden;
-  position: relative;
-  padding: 10px;
-  width: 300px;
-  border: 3px solid var(--primary);
-  z-index: 1;
-  text-decoration: none;
-  cursor: pointer;
-}
-.btn-inscribirme::before{
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 200%;
-  left: 0;
-  top: -200%;
-  border-radius: 50%;
-  background-color: var(--primary);
-  z-index: 1;
-  transition: all 0.6s ease;
-}
-.btn-inscribirme:hover:before{
-  top: 0;
-  border-radius: 0%;
-}
-.btn-inscribirme span{
-  color: var(--text);
-  position: relative;
-  z-index: 2;
+.inscripcion img{
+  width: 400px;
+  border-radius: 15px;
 }
 
 /*Acerca de Nosotros*/
