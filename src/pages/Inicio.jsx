@@ -3,7 +3,7 @@ import Contador from '../components/Contador.jsx'
 import banner from '../assets/Flyer_oficial.png'
 import Carrusel from '../components/Carrusel.jsx'
 import Formulario from '../components/Formulario.jsx'
-import agenda from '../assets/Agenda_academica.JPG'
+import agenda from '../assets/Agenda_academica.jpg'
 import {RViewer, RViewerTrigger} from 'react-viewerjs'
 
 const Inicio = () => { 
