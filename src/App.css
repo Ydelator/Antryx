@@ -155,6 +155,14 @@ body {
 .agenda{
   width: 400px;
 }
+@media (max-width: 980px){
+  .banner-info{
+    width: 90%;
+  }
+  .agenda{
+    width: 90%;
+  }
+}
 
 /*Contador*/
 .contador{
@@ -270,6 +278,11 @@ ion-icon{
   margin-top: 10px;
   margin-bottom: 10px;
 }
+@media (max-width: 980px){
+  .flyer-card{
+    width: 90%;
+  }
+}
 
 /*Prefooter*/
 .pre-footer{
@@ -291,13 +304,27 @@ ion-icon{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 35%px;
+  width: 35%;
   background-color: #ffffff;
   border-radius: 15px;
 }
 .inscripcion img{
   width: 375px;
   border-radius: 15px;
+}
+@media (max-width: 980px){
+  .pre-footer{
+    flex-direction: column;
+  }
+  .inscripcion{
+    width: 90%;
+  }
+  .mapa{
+    width: 100%;
+  }
+  .inscripcion img{
+    width: 100%;
+  }
 }
 
 /*Acerca de Nosotros*/
@@ -368,6 +395,7 @@ ion-icon{
 }
 .cards{
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
@@ -380,7 +408,26 @@ ion-icon{
   background-color: var(--primary);
   border: solid var(--text);
 }
-
+@media (max-width: 980px){
+  .acerca-primero p{
+    width: 90%;
+  }
+  .acerca-primero img{
+    width: 100%;
+  }
+  .acerca1 img{
+    width: 100%;
+  }
+  .mision, .vision{
+    width: 95%;
+  }
+  .valores-marca{
+    width: 95%;
+  }
+  .cards p{
+    width: 90%;
+  }
+}
 /*Contactanos*/
 .contactanos{
   color: var(--text);
@@ -462,6 +509,17 @@ ion-icon{
   position: relative;
   z-index: 2;
 }
+@media (max-width: 980px){
+  .contactanos{
+    width: 100%;
+  }
+  .elemento-form{
+    width: 95%;
+  }
+  .btn-enviar{
+    width: 90%;
+  }
+}
 
 /*Agradecimientos*/
 .agradecimiento{
@@ -479,6 +537,6 @@ ion-icon{
     flex-direction: column;
   }
   .agradecimiento img{
-    width: 500px;
+    width: 90%;
   }
 }
