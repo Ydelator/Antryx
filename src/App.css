@@ -238,10 +238,6 @@ body {
   flex-direction: row;
   align-items: center;
 }
-ion-icon{
-  width: 50px;
-  height: 50px;
-}
 .next{
   cursor: pointer;
 }
@@ -566,6 +562,11 @@ ion-icon{
 .footer-1 span{
   text-decoration: underline;
 }
+.footer-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .footer-2 img{
   width: 400px;
 }
@@ -576,6 +577,26 @@ ion-icon{
   align-items: center;
 }
 .link-insta{
-  text-decoration: none;
   color: #e2dbdb;
+}
+@media (max-width: 980px){
+  .footer{
+    flex-direction: column;
+  }
+  .footer-1 h2{
+    font-size: 20px;
+  }
+  .footer-1 h3{
+    font-size: 15px;
+  }
+  .footer-1 h4{
+    font-size: 12px;
+  }
+  .footer-2 img{
+    width: 80%;
+  }
+  ion-icon{
+    width: 32px;
+    height: 32px;
+  }
 }

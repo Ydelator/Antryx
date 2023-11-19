@@ -83,9 +83,9 @@ const Carrusel = () => {
             </SwiperSlide> 
         </Swiper>
         <div className="indicador">
-          <div className="prev"><ion-icon name="arrow-back-circle-outline"></ion-icon></div>
+          <div className="prev"><ion-icon name="arrow-back-circle-outline" size='large'></ion-icon></div>
           <div className='paginacion'></div>
-          <div className="next"><ion-icon name="arrow-forward-circle-outline"></ion-icon></div>
+          <div className="next"><ion-icon name="arrow-forward-circle-outline" size='large'></ion-icon></div>
         </div>
     </div>
   )

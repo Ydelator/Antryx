@@ -14,11 +14,11 @@ const Footer = () => {
               <h4>Maria Claudia Collante</h4>
               <h4>Email: <span>workshop2023barranquilla@gmail.com</span></h4>
               <div className="whatsapp">
-                <ion-icon name="logo-whatsapp"></ion-icon> 
+                <ion-icon name="logo-whatsapp" size='large'></ion-icon> 
                 <h4>+57 3175033540</h4>
               </div>
               <div className="instagram">
-                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-instagram" size='large'></ion-icon>
                 <h4><a href="https://www.instagram.com/antryxeventos/" target='_blank' className='link-insta'>Antryx Eventos</a></h4>
               </div>
           </div>
