@@ -77,6 +77,7 @@ body {
   }
   .container-nav.open{
     transform: translateX(0)!important;
+    z-index: 3;
   }
   .nav-toogle{
     display: flex !important;
@@ -281,6 +282,21 @@ body {
   .flyer-card{
     width: 90%;
   }
+}
+
+/*Videos*/
+.videos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.videos video{
+  width: 250px;
 }
 
 /*Prefooter*/
