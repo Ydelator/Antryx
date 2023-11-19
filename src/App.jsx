@@ -7,6 +7,7 @@ import Acerca from './pages/Acerca.jsx'
 import Contacto from './pages/Contacto.jsx'
 import Agradecimientos from './pages/Agradecimientos.jsx'
 import Galeria from './pages/Galeria.jsx'
+import Footer from './components/Footer.jsx'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path='agradecimientos' element={<Agradecimientos/>}/>
           <Route path='galeria' element={<Galeria/>}/>
         </Routes>
+        <Footer/>
       </div>
     </Router>
   )
