@@ -1,11 +1,15 @@
 import React from 'react'
 import logo from '../assets/WhatsApp_Image_2023-09-14_at_7.26.16_PM-removebg-preview.png'
+import qr from '../assets/QR_Workshop.jpeg'
 
 const Footer = () => {
   return (
     <div className='footer'>
       <div className="footer-2">
         <img src={logo} alt="logo" />
+      </div>
+      <div className="footer-3">
+        <img src={qr} alt="QR" />
       </div>
       <div className="footer-1">
           <h2>¿CÓMO CONTACTARNOS?</h2>

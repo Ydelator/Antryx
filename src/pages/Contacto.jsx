@@ -5,15 +5,17 @@ const Contacto = () => {
   const refForm = useRef();
 
   const handleSubmit = (event) =>{
-    /*event.preventDefault()
-    const serviceID = "service_cl3g4g5"
-    const templateID = "template_83y6djk"
+    event.preventDefault()
+    window.alert("Tu mensaje ha sido enviado, gracias por tu apoyo")
+    const serviceID = "service_8xndhzk"
+    const templateID = "template_fgy2kha"
 
-    const apiKey ="k4ZZJKOUogh7KT_P9"
+    const apiKey ="nWRrNz8nsdk7mv_sE"
 
     emailjs.sendForm(serviceID, templateID, refForm.current, apiKey)
     .then( result => console.log(result.text) )
-    .catch( error => console.error(error))*/
+    .catch( error => console.error(error))
+    refForm.current.reset()
   }
   return (
     <div className='contactanos'>
@@ -22,12 +24,12 @@ const Contacto = () => {
             <div className="formulario1">
               <div className='elemento-form'>
                 <label>Nombre <span>*</span></label>
-                <input name='nombre' type="text" placeholder=''/>
+                <input name='user_name' type="text" placeholder='' required/>
               </div>
 
               <div className='elemento-form'>
                 <label>Apellido <span>*</span></label>
-                <input name='apellido' type="text" placeholder=''/>
+                <input name='last_name' type="text" placeholder='' required/>
               </div>
             </div>
 
@@ -39,12 +41,12 @@ const Contacto = () => {
 
               <div className='elemento-form'>
                 <label>Correo electronico <span>*</span></label>
-                <input name='email' type="email" placeholder=''/>
+                <input name='email' type="email" placeholder='' required/>
               </div>
             </div>
 
             <label className='label-mensaje'>Mensaje <span>*</span></label>
-            <textarea name="Message" id="" cols="25" rows="10" placeholder=''></textarea>
+            <textarea name="message" id="" cols="25" rows="10" placeholder='' required></textarea>
 
           <button className='btn-enviar'><span>Enviar</span></button>
       </form>
