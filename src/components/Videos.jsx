@@ -2,6 +2,8 @@ import React from 'react'
 import invi_1 from '../assets/invitacion_1.mp4'
 import invi_2 from '../assets/invitacion_2.mp4'
 import invi_3 from '../assets/invitacion_3.mp4'
+import invi_4 from '../assets/invitacion_4.mp4'
+import invi_5 from '../assets/invitacion_5.mp4'
 import invi_6 from '../assets/invitacion_6.mp4'
 
 const Videos = () => {
@@ -9,6 +11,8 @@ const Videos = () => {
         invi_1,
         invi_2,
         invi_3,
+        invi_4,
+        invi_5,
         invi_6
     ]
   return (
