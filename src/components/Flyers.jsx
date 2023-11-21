@@ -1,5 +1,5 @@
 import React from 'react'
-import Andres from '../assets/Flyers/ANDRES SERJE.png'
+import Rosa from '../assets/Flyers/ROSA_MARIA_CORCHO.jpg'
 import Bisila from '../assets/Flyers/BISILA BOKOKO.png'
 import Carlos from '../assets/Flyers/CARLOS DE LA HOZ.png'
 import Fausto from '../assets/Flyers/FAUSTO COLONNA.png'
@@ -9,9 +9,9 @@ import {RViewer, RViewerTrigger} from 'react-viewerjs'
 
 const Flyers = () => {
     const expositores = [
-    Juan
+    Rosa
     ,
-    Andres
+    Juan
     ,
     Kathy
     ,

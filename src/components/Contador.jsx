@@ -5,7 +5,7 @@ const Contador = () => {
     const [timerHours, setTimerHours] = useState('00')
     const [timerMinutes, setTimerMinutes] = useState('00')
     const [timerSeconds, setTimerSeconds] = useState('00')
-  
+
     let interval = useRef()
   
     const startTimer = () =>{
